@@ -1,0 +1,17 @@
+This is Me ol RoadMap
+
+Simon Game mental walk through
+
+We need a homepage that has a start button and a button that you can press that shows you how to play the game
+
+write code that shows a sequence of colors
+
+give functionality  to 4 buttons that represent each color
+
+make a score counter.
+
+when score reaches certain number winner and can move to next level
+
+if you press a button out of order you lose and restart back to the homepage
+
+make a way to keep score even if page is reloaded

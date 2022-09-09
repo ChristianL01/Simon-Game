@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f5;
+
+}
+#game-name {
+    font-size: 45px;
+}
+.score-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 80px;
+    width: 100vh;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.tile-container {
+    display: grid;
+}
+.score {
+    font-size: 37px;
+    margin-left: 170px;
+    padding: 5px 60px 5px 60px;
+    border: 4px solid black;
+    background-color: #f5f5f5;
+    color: black;
+}
+.level {
+    font-size: 37px;
+    margin-right: 170px;
+    padding: 5px 60px 5px 60px;
+    border: 4px solid black;
+    background-color: #f5f5f5;
+    color: black;
+}
+.tile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    height: 70vh;
+    width: 100vh;
+}
+
+.tile-red {
+    background-color: #EA0000;
+    height: 180px;
+    width: 180px;
+}
+.tile-blue {
+    background-color: #000BF5;
+    height: 180px;
+    width: 180px;
+}
+.tile-yellow {
+    background-color: #F0F200;
+    height: 180px;
+    width: 180px;
+}
+.tile-green {
+    background-color: green;
+    height: 180px;
+    width: 180px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-end;
+    height: 10vh;
+    width: 100vh;
+}

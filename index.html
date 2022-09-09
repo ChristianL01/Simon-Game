@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMON</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SIMON</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+	</head>
+	<body>
+		<main>
+			<div class="header">
+				<h1 id="game-name">SIMON</h1>
+			</div>
+			<div class="score-wrapper">
+				<div>
+					<label class="score">0</label>
+				</div>
+				<div>
+					<label class="level">1</label>
+				</div>
+			</div>
+			<div class="game-section">
+				<section class="tile-container">
+					<div class="tile tile-red"></div>
+					<div class="tile tile-yellow"></div>
+					<div class="tile tile-blue"></div>
+					<div class="tile tile-green"></div>
+				</section>
+			</div>
+			<footer class="footer-section">
+				<div>
+					<a href="homepage.html" class="exit-button"><button>EXIT</button></a>
+				</div>
+				<div class="start"><button>START GAME</button></div>
+				<div>
+					<a href="" class="help-me"><button>HOW TO PLAY</button></a>
+				</div>
+			</footer>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
 </html>
