@@ -32,7 +32,7 @@ function nextRound() {
     
     cpuSequence.push(chosenColor());
     showSequence(cpuSequence);
-    console.log(cpuSequence)
+   
 }
 
 function startGame() {
