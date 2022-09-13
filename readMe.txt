@@ -20,4 +20,4 @@ ADDING SOUND
 USING WINDOWS INSTEAD OF ALERTS
 CLEANING UP SOME CODE
 //LINK TO NETLIFY
-simon-game822.netlify.app
+https://simon-game822.netlify.app
