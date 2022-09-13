@@ -10,7 +10,8 @@ const blueTile = document.querySelector('.color-blue');
 const yellowTile = document.querySelector('.color-yellow');
 const greenTile = document.querySelector('.color-green');
 const scoreEl = document.querySelector('.score');
-const level = document.querys
+const levelEl = document.querySelector('.level');
+
 
 
 function chosenColor() {
@@ -22,7 +23,7 @@ function chosenColor() {
 
 function nextRound() {
     level += 1;
-
+    levelEl.innerText = level
     
     cpuSequence.push(chosenColor());
     showSequence(cpuSequence);
@@ -45,6 +46,16 @@ function litColor(color) {
     setTimeout(function() {
         colorEL.classList.remove('lit');
     }, 800);
+}
+
+function lose() {
+    humanSequence = [];
+    cpuSequence = [];
+    level = 0;
+    levelEl.innerText = level
+    score = 0;
+    scoreEl.innerText = score;
+    startButton.classList.remove('remove');
 }
 
 function showSequence(nextSequence) {
@@ -96,10 +107,13 @@ function compare() {
     if (humanSequence.length == cpuSequence.length) {
         for (let i = 0; i < humanSequence.length; i++) {
             if (humanSequence[i] !== cpuSequence[i]) {
-                return false;
+                alert('Darn, Game Over!');
+                lose();
+                return;
             }
         }
-        alert('Congrats, onto the next round')
+        alert('Congrats, onto the next round');
+        nextRound();
         return true
     }
     return false
