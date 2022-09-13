@@ -11,8 +11,13 @@ const yellowTile = document.querySelector('.color-yellow');
 const greenTile = document.querySelector('.color-green');
 const scoreEl = document.querySelector('.score');
 const levelEl = document.querySelector('.level');
+const howTo = document.querySelector('.help-me');
+console.log(howTo)
 
-
+function helpMe() {
+    alert('THE COMPUTER WILL SHOW A SEQUENCE OF COLORS. TO PROGRESS IN THE GAME, CLICK THE COLORS OF EACH BUTTON IN THE EXACT SAME PATTERN SHOWN BY THE CPU');
+}
+howTo.addEventListener('click', helpMe);
 
 function chosenColor() {
     const colors = ['red', 'yellow', 'blue', 'green'];
