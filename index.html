@@ -6,39 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SIMON</title>
 		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/reset.css" />
 	</head>
-	<body>
-		<main>
-			<div class="header">
-				<h1 id="game-name">SIMON</h1>
-			</div>
-			<div class="score-wrapper">
-				<div>
-					<label class="score">0</label>
-				</div>
-				<div>
-					<label class="level">1</label>
-				</div>
-			</div>
-			<div class="game-section">
-				<section class="color-container">
-					<div class="color color-red" data-color="red"></div>
-					<div class="color color-yellow" data-color="yellow"></div>
-					<div class="color color-blue" data-color="blue"></div>
-					<div class="color color-green" data-color="green"></div>
-				</section>
-			</div>
-			<footer class="footer-section">
-				<div>
-					<a href="homepage.html" class="exit-button"><button>EXIT</button></a>
-				</div>
-				<div class="start"><button>START GAME</button></div>
-				<div>
-					<a href="" class="help-me"><button>HOW TO PLAY</button></a>
-				</div>
-			</footer>
-		</main>
+	<body class="homepage">
+		<h2 class="home-header">SIMON</h2>
+		<h3>
+			<span id="the">THE</span>
+			<span id="color">COLOR</span>
+			<span id="matching">MATCHING</span>
+			<span id="game">GAME</span>
+			   </h3>
+		<div>
+			<a href="game.html"><button class="home-start">GO TO GAME</button></a>
+		</div>
+        <div>
+            <button type="button" class="help-me">HOW TO PLAY</button>
+        </div>
 
 		<script src="script.js"></script>
 	</body>
